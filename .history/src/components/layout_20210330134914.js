@@ -26,16 +26,11 @@ const Layout = (props) => {
                         margin: 0;
                         line-height: 1.5;
                     }
-                    ul {
-                        list-style: none;
-                        margin: 0;
-                        padding: 0;
-                    }
                 `}
             />
             <Helmet>
                 <title>Gatsby Hotel</title>
-                <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
             </Helmet>
