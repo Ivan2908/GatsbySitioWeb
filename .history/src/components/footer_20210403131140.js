@@ -10,12 +10,16 @@ const HomeLink = styled(Link)`
     text-decoration: none;
 `;
 
-const Header = () => {
+const Footer = ({title}) => {
+
+    const year = new Date().getFullYear();
     return ( 
-        <header
+        <>
+        <footer
             css={css`
                 background-color: rgb(44,62,80);
-                padding: 0.1rem;
+                padding: 1rem;
+                margin-top: 5rem;
             `}
         >
             <div
@@ -37,8 +41,20 @@ const Header = () => {
 
                 <Navigation />
             </div>
-        </header>
+        </footer>
+        <p
+            css={css`
+                text-align: center;
+                color: #FFF;
+                background-color: rgb(33,44,55);
+                margin: 0;
+                padding: 1rem;
+            `}
+        >
+            {title}. All rights reserved {year} &copy;
+        </p>
+        </>
      );
 }
  
-export default Header;
+export default Footer;

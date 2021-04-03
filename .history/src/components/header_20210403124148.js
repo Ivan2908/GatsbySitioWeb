@@ -14,7 +14,7 @@ const Header = () => {
     return ( 
         <header
             css={css`
-                background-color: rgb(44,62,80);
+                background-color: #222;
                 padding: 0.1rem;
             `}
         >
@@ -32,7 +32,8 @@ const Header = () => {
             >
                 <HomeLink
                     to='/'
-                ><h1>Hotel Gatsby</h1>
+                >
+                    <h1>Hotel Gatsby</h1>
                 </HomeLink>
 
                 <Navigation />

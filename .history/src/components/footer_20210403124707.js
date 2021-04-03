@@ -10,11 +10,12 @@ const HomeLink = styled(Link)`
     text-decoration: none;
 `;
 
-const Header = () => {
+const Footer = () => {
     return ( 
-        <header
+        <>
+        <footer
             css={css`
-                background-color: rgb(44,62,80);
+                background-color: #222;
                 padding: 0.1rem;
             `}
         >
@@ -37,8 +38,12 @@ const Header = () => {
 
                 <Navigation />
             </div>
-        </header>
+        </footer>
+        <p>
+            Hotel Gatsby, All rights reserved &copy;
+        </p>
+        </>
      );
 }
  
-export default Header;
+export default Footer;

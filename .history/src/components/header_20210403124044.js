@@ -7,14 +7,13 @@ import { Link } from 'gatsby';
 const HomeLink = styled(Link)`
     color: #FFF;
     text-align: center;
-    text-decoration: none;
 `;
 
 const Header = () => {
     return ( 
         <header
             css={css`
-                background-color: rgb(44,62,80);
+                background-color: #222;
                 padding: 0.1rem;
             `}
         >
@@ -30,10 +29,9 @@ const Header = () => {
                     }
                 `}
             >
-                <HomeLink
-                    to='/'
-                ><h1>Hotel Gatsby</h1>
-                </HomeLink>
+                <h1>
+                    Hotel Gatsby
+                </h1>
 
                 <Navigation />
             </div>

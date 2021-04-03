@@ -1,4 +1,4 @@
-exports.createPages = async ({ actions, graphql, reporter }) => {
+exports.createPage = async ({ actions, graphql, reporter }) => {
     const result = await graphql(`
     query{
         allDatoCmsRoom {

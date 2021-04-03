@@ -11,7 +11,7 @@ const Layout = (props) => {
 
     const seo = useSeo();
 
-    const {  fallbackSeo: { description, title } } = seo
+    const { siteName, fallbackSeo: { description, title } } = seo
 
     return (
         <>

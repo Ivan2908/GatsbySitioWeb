@@ -1,4 +1,4 @@
-exports.createPages = async ({ actions, graphql, reporter }) => {
+exports.createPage = async ({ actions, graphql, reporter }) => {
     const result = await graphql(`
     query{
         allDatoCmsRoom {
@@ -9,7 +9,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     } 
     `);
 
-    console.log(result.data.allDatoCmsRoom.nodes);
+    // console.log(result.data.allDatoCmsRoom.nodes);
 
     if(result.errors) {
         reporter.panic('There was no result', result.errors);
